@@ -24,12 +24,6 @@ class CreateDynamicTableSerializer(serializers.Serializer):
     def validate(self, data):
         fields = data.get("fields")
 
-        if not fields:
-            raise serializers.ValidationError('"fields" was not provided.')
-
-        if not isinstance(fields, dict):
-            raise serializers.ValidationError('"fields" must be a dict.')
-
         for field_name, field_type in fields.items():
             if field_type not in DynamicModel.MAPPING_FIELD_TYPES:
                 raise serializers.ValidationError(

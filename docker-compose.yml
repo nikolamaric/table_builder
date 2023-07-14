@@ -4,7 +4,7 @@ services:
     image: postgres
     container_name: postgres
     volumes:
-      - ./data/db:/var/lib/postgresql/data
+      - db_data:/var/lib/postgresql/data
     environment:
       - POSTGRES_DB=postgres
       - POSTGRES_USER=postgres
@@ -23,3 +23,5 @@ services:
       - POSTGRES_PASSWORD=postgres
     depends_on:
       - db
+volumes:
+    db_data:

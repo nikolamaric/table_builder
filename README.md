@@ -14,9 +14,9 @@ the following endpoints:
 
 **Fork the repo, position to the root and do the following steps:**
 
-- Build the docker images: `docker-compose build`
+- Build the docker containers: `docker-compose build`
 
-- Run docker images: `docker-compose up -d`
+- Run the docker containers: `docker-compose up -d`
 
 And you are ready to go! Everything is running on: `localhost:8000`. So it means that if you want to create a new
 dynamic table, you should send POST on: `http://localhost:8000/api/table`.

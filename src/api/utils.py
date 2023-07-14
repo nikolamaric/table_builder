@@ -1,7 +1,7 @@
-from django.db import models, connection, transaction
+from django.db import connection, models, transaction
 
 from api.enums import TypeEnum
-from api.models import Table, Field
+from api.models import Field, Table
 
 
 class DynamicModel:

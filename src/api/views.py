@@ -3,9 +3,9 @@ from rest_framework.views import APIView
 
 from api.models import Table
 from api.serializers import (
-    get_dynamic_serializer_class,
     CreateDynamicTableSerializer,
     DynamicTableInfoSerializer,
+    get_dynamic_serializer_class,
 )
 from api.utils import (
     DynamicModel,
@@ -14,7 +14,7 @@ from api.utils import (
 )
 
 
-class TableView(APIView):
+class DynamicTableCreateView(APIView):
     def post(self, request):
         """
         Create a new dynamic table
@@ -38,6 +38,8 @@ class TableView(APIView):
         res = DynamicTableInfoSerializer(dict(table=table, fields=fields)).data
         return Response(data=res, status=201)
 
+
+class DynamicTableUpdateView(APIView):
     def put(self, request, table_id):
         """
         Update a dynamic table - add new fields

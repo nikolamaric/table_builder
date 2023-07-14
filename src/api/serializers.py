@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from api.models import Table, Field
+from api.models import Field, Table
 from api.utils import DynamicModel
 
 

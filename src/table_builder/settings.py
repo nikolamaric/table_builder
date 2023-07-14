@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-gu#ny81=r16rncm%1q=@s-34@4&_)+sv43via5ra20le&+64o@
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['5d26-188-2-62-178.ngrok-free.app', "localhost"]
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -77,13 +77,6 @@ ASGI_APPLICATION = 'table_builder.asgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
-
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
 
 DATABASES = {
     'default': {

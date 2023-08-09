@@ -1,6 +1,6 @@
-# Table Builder application
+# Dynamic Table Builder application
 
-The goal is to build a simple backend for a table builder app, where the user can build tables dynamically. The app has
+The goal is to build a simple backend for a dynamic table builder app, where the user can build tables dynamically. The app has
 the following endpoints:
 
 | Request type | Endpoint	           | Action                                                                                                                            |
